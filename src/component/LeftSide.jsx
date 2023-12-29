@@ -123,7 +123,7 @@ useEffect(()=>{
 
    }
    fetchData()
-},[])
+})
   //  update card function 
   async function updateCard(){
     console.log('updatecard');
