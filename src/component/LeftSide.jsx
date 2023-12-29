@@ -65,7 +65,7 @@ const [viewId,setViewId]=  useState('')
   }
   const handleOk3 =async ()=>{
     setIsModalOpen3(false)
-    const url = `http://localhost:4000/delete/`+deleteId
+    const url = `https://necleo.onrender.com/delete/`+deleteId
     await axios.delete(url)
     window.location.reload()
   }
@@ -106,7 +106,7 @@ const [viewId,setViewId]=  useState('')
 async function submitHandle(e){
  
  try {
-  const result =  await axios.post('http://localhost:4000/createpost',data)
+  const result =  await axios.post('https://necleo.onrender.com/createpost',data)
  console.log(result,'result')
  setIsModalOpen(false)
  } catch (error) {
@@ -117,7 +117,7 @@ async function submitHandle(e){
 // finding all projects 
 useEffect(()=>{
    async function fetchData(){
-    const projects = await axios.get('http://localhost:4000/allproject')
+    const projects = await axios.get('https://necleo.onrender.com/allproject')
     setAllproject(projects.data.projects)
     console.log(projects.data.projects,'projects');
 
@@ -127,7 +127,7 @@ useEffect(()=>{
   //  update card function 
   async function updateCard(){
     console.log('updatecard');
-    const url = `http://localhost:4000/update/` + updateid
+    const url = `https://necleo.onrender.com/update/` + updateid
    const updated =  await axios.put(url,data2)
           window.location.reload()
   }
@@ -253,7 +253,7 @@ useEffect(()=>{
   cover={
     <img
       alt="example"
-      src={`http://localhost:4000/images/uploads/${item.image}`}
+      src={`https://necleo.onrender.com/images/uploads/${item.image}`}
     />
   }
   
@@ -282,7 +282,7 @@ useEffect(()=>{
        {allproject && allproject.map((item)=>{
          if(viewId == item._id){
             return  <div className="view">
-            <img src={`http://localhost:4000/images/uploads/`+ item.image} alt="img" className='view-image' />
+            <img src={`https://necleo.onrender.com/images/uploads/`+ item.image} alt="img" className='view-image' />
             <h3>{item.title}</h3>
             <p>{item.discription}</p>
           </div>
