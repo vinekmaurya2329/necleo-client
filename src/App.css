@@ -1,0 +1,244 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@300&display=swap'); */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+.sidebar{
+  background-color: #fff !important;
+  /* color: #fff; */
+  padding: 5px 18px;
+  z-index: 6;
+}
+.logo{
+  width: 80px;
+  margin-top: 14px;
+  
+}
+.header{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  column-gap: 10px;
+  /* margin-bottom: 15px !important; */
+}
+.profile-img{
+  border: 1px solid rgb(201, 194, 194);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  /* margin-bottom: 25px !important; */
+
+}
+
+.sidebar-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: center; */
+  
+}
+.uper{
+  /* background-color: blue; */
+  height: 65vh;
+}
+.lower{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+  
+  /* background-color: red; */
+  height: 30vh;
+}
+/* .line{
+  border-top: 1px solid red;
+} */
+.span1{
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+ 
+}
+.span2{
+  color: gray;
+  font-size: 11px;
+ 
+}
+.create-project{
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 13px;
+  margin: 15px 20px;
+  /* padding: 10px 15px; */
+  padding: 10px 10px;
+  text-align: center;
+
+}
+.inside-create{
+  width: 180px;
+  height: 130px;
+  background-color: #fdc9ac;
+  /* margin: 0px 10px; */
+  border-radius: 12px;
+}
+.inside-create:hover{
+  cursor: pointer;
+  scale: 0.9;
+}
+.inside-create i{
+  font-size: 30px;
+  color: #ffffff;
+ position: relative;
+ top: 50px;
+}
+.content{
+  
+  background-color: #dfdede !important;
+}
+ h4 a:hover{
+  color: orange !important;
+}
+h4:hover{
+  color: orange !important;
+
+
+}
+.loremdata{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around ;
+  row-gap: 10px;
+}
+.cards{
+  border :1px solid rgb(158, 157, 157);
+  border-radius: 8px;
+}
+@media (max-width:1220px) {
+  .loremdata{
+    column-count: 2;
+  }
+}
+@media (min-width:10px)and (max-width:700px) {
+  .loremdata{
+    column-count: 1;
+  }
+  .loremdata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sample-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.projects{
+ display: flex;
+ justify-content:start;
+ /* align-items: center; */
+ column-gap: 10px;
+ flex-wrap: wrap;
+}
+.card{
+  width: 300px;
+  height: 400px;
+}
+.card img{
+  width: 300px;
+  height: 200px;
+}
+
+@media (max-width:300px) {
+ .projects{
+  flex-shrink: 2;
+ }
+  
+  
+}
+form input{
+  padding: 4px 7px;
+  height: 25px;
+  border-radius: 7px;
+}
+form button{
+  padding: 5px 7px;
+  margin-left: 20px;
+  background-color: rgb(9, 178, 245);
+  border: 1px solid rgb(186, 185, 185);
+  border-radius: 5px;
+}
+.edit-btn{
+  color:gray;
+  font-size: 20px;
+  border-style: none;
+  background-color: #fff;
+}
+.delete-btn{
+  color:gray;
+  font-size: 20px;
+  border-style: none;
+  background-color: #fff;
+}
+.view-btn{
+  color:gray;
+  font-size: 20px;
+  border-style: none;
+  background-color: #fff;
+}
+.view-btn:hover{
+  color: rgb(76, 76, 248);
+}
+.delete-btn:hover{
+  color: red;
+}
+.edit-btn:hover{
+  color: #000;
+}
+.view-image{
+  width: 100%;
+  height: 100%;
+}
