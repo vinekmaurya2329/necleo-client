@@ -162,7 +162,7 @@ useEffect(()=>{
         className='sidebar'
       ><div className='sidebar-container'>
         <div className="uper">
-        <img src="http://localhost:3000/N-logo.png" className='logo' alt="img" /> <hr className='line' />
+        <img src="https://necleo-client.vercel.app//N-logo.png" className='logo' alt="img" /> <hr className='line' />
         {/* <h1 className="demo-logo-vertical">hello</h1><hr /> */}
         <h4 style={{color:'#FA782F'}}><i class="ri-database-2-fill"></i><a href="/" style={{color:'#FA782F'}}> My Projects</a></h4>
         <h4 style={{color:'#C4C4C4'}}><i class="ri-apps-fill"></i><a href="/sampleproject" style={{color:'#C4C4C4'}}> Sample Projects</a></h4> <hr />
